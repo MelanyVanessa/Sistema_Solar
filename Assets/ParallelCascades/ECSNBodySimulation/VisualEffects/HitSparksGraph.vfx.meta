@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cf694b2043c48b84a893835c35f33024
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/VisualEffects/HitSparksGraph.vfx
+  uploadId: 811178

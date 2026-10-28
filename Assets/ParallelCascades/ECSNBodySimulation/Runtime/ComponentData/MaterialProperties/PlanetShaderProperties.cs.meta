@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 68086f8fe94a49f4840aee9b27db54f6
+timeCreated: 1761574017
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/MaterialProperties/PlanetShaderProperties.cs
+  uploadId: 811178

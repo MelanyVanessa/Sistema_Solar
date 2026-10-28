@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 8d03b5c660c744b38c38924797f4ef22
+timeCreated: 1755075891
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/OrbitDrawingSettingsSingleton.cs
+  uploadId: 811178

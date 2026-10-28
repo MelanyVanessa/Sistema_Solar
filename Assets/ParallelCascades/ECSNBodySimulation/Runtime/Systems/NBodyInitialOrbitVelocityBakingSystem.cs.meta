@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: eb1644fd3ffe4a4ea0613fc7b90a089d
+timeCreated: 1754927385
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/Systems/NBodyInitialOrbitVelocityBakingSystem.cs
+  uploadId: 811178

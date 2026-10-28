@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1290e95cf1bf8d5468f18d2152a03fea
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Samples/Prefabs/Brown Planet.prefab
+  uploadId: 811178

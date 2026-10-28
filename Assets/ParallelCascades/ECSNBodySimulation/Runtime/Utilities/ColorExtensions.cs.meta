@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 68998252df1b4c6e86de363202a95d0e
+timeCreated: 1761574509
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/Utilities/ColorExtensions.cs
+  uploadId: 811178

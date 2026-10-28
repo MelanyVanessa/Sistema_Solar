@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 64bf5faef403af3488ec49a1afa70562
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ProceduralShaders/Materials/Moon.mat
+  uploadId: 811178

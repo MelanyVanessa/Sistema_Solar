@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4387bc7b5669423a9c981ec65ec7db87
+timeCreated: 1761589136
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/MainSpaceLightSingletonTag.cs
+  uploadId: 811178

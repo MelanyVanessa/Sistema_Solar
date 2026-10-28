@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: d8f24a5a9a20425d81c2e649654bf3c5
+timeCreated: 1756161170
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/SatelliteSpawnerData.cs
+  uploadId: 811178

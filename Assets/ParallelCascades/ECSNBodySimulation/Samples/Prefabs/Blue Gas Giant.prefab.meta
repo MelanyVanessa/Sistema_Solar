@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1ccd92e0e9a17e948bff852028ba840e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Samples/Prefabs/Blue Gas Giant.prefab
+  uploadId: 811178

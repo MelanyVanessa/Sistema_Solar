@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70d86222d5a9df14e96fda30756f0bec
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ProceduralShaders/Materials/Gas Giant.mat
+  uploadId: 811178

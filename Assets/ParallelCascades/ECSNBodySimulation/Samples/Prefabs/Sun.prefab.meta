@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8d239cbce7242b44094bd462f77096f9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Samples/Prefabs/Sun.prefab
+  uploadId: 811178

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4278eb3cba4f4684893fc0e713bc2202
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Samples/URPSettings/Sample Volume Profile.asset
+  uploadId: 811178

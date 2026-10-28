@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: eb315e0a1401450fa080ae1433bf8575
+timeCreated: 1761589234
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/Systems/MainSpaceLightPositionUpdateSystem.cs
+  uploadId: 811178

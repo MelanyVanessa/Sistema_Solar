@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6f12164b364aa75408f76500d8a398fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Samples/Prefabs/Green Planet.prefab
+  uploadId: 811178

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ae2cb90730484ae182dc7d41e85f833d
+timeCreated: 1756672334
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/Systems/NBodyTriggerCollisionSystem.cs
+  uploadId: 811178

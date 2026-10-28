@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 50101a7252fc4cbf80148fcff12c253c
+timeCreated: 1755015035
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/Authoring/NBodyOrbitAuthoring.cs
+  uploadId: 811178

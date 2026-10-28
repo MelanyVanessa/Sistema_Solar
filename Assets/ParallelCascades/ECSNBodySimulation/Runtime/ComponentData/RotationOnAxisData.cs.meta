@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 69fc7d822fb74017beff4598df940faa
+timeCreated: 1761590679
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/RotationOnAxisData.cs
+  uploadId: 811178

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d24fd9c92a0a0f94e9655e7b9f383a47
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341370
+  packageName: ECS N-Body Orbit Simulation
+  packageVersion: 1.0.0
+  assetPath: Assets/ParallelCascades/ECSNBodySimulation/Runtime/ComponentData/ParallelCascades.ECSNBodySimulation.Runtime.Data.asmdef
+  uploadId: 811178
