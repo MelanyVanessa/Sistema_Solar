@@ -162,9 +162,9 @@ namespace SistemaSolar.Editor
             if (prefab != null) PrefabUtility.InstantiatePrefab(prefab);
             else Debug.LogError("No se encontró el XR Origin en " + RutaXROrigin);
 
-            if (UnityEngine.Object.FindFirstObjectByType<XRInteractionManager>() == null)
+            if (UnityEngine.Object.FindAnyObjectByType<XRInteractionManager>() == null)
                 new GameObject("XR Interaction Manager").AddComponent<XRInteractionManager>();
-            if (UnityEngine.Object.FindFirstObjectByType<EventSystem>() == null)
+            if (UnityEngine.Object.FindAnyObjectByType<EventSystem>() == null)
             {
                 var es = new GameObject("EventSystem");
                 es.AddComponent<EventSystem>();
