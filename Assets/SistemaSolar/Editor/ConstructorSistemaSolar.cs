@@ -10,6 +10,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Filtering;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.UI;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation;
 using UnityEngine.EventSystems;
 
 namespace SistemaSolar.Editor
@@ -25,7 +26,9 @@ namespace SistemaSolar.Editor
         const string RutaXROrigin = "Assets/VRTemplateAssets/Prefabs/Setup/Complete XR Origin Set Up Variant.prefab";
         const string RutaSkybox = "Assets/AHProxy/PlanetShader/DemoScene/Materials/DemoSceneSkybox.mat";
 
-        static readonly Vector3 PosicionSistema = new Vector3(0f, 1.1f, 1.9f);
+        // Tamaño del sistema: multiplica diámetros y distancias.
+        const float Escala = 2f;
+        static readonly Vector3 PosicionSistema = new Vector3(0f, 1.1f, 3.6f);
 
         struct Datos
         {
@@ -38,7 +41,7 @@ namespace SistemaSolar.Editor
         static Datos D(string nombre, string textura, float diametro, float radio, float periodo, float giro,
             float inclinacion, float angulo, string info, bool anillos = false, Color? tinte = null) => new Datos
         {
-            nombre = nombre, textura = textura, diametro = diametro, radioOrbita = radio, periodo = periodo,
+            nombre = nombre, textura = textura, diametro = diametro * Escala, radioOrbita = radio * Escala, periodo = periodo,
             giro = giro, inclinacion = inclinacion, angulo = angulo, info = info, anillos = anillos,
             tinte = tinte ?? Color.white
         };
@@ -108,7 +111,7 @@ namespace SistemaSolar.Editor
             matSol.SetFloat("_Emisivo", 1f);
             var sol = Modelo("Sol", esfera, matSol, sistema.transform);
             sol.transform.localPosition = Vector3.zero;
-            sol.transform.localScale = Vector3.one * 0.3f;
+            sol.transform.localScale = Vector3.one * 0.3f * Escala;
             sol.AddComponent<SphereCollider>().isTrigger = true;
             var compSol = sol.AddComponent<Sol>();
             compSol.fuego = CrearFuego(sistema.transform);
@@ -122,7 +125,7 @@ namespace SistemaSolar.Editor
                 if (Planetas[i].nombre == "Tierra") tierra = cuerpos[i];
             }
             var luna = CrearCuerpo(Luna, tierra.transform, sistema.transform, esfera, shader, fisica, matAnillo);
-            luna.toleranciaAnillo = 0.03f;
+            luna.toleranciaAnillo = 0.03f * Escala;
             cuerpos[Planetas.Length] = luna;
             control.cuerpos = cuerpos;
 
@@ -148,7 +151,9 @@ namespace SistemaSolar.Editor
             // Suelo invisible para que la locomoción no caiga al vacío.
             var suelo = new GameObject("Suelo invisible");
             suelo.transform.position = new Vector3(0f, -0.05f, 0f);
-            suelo.AddComponent<BoxCollider>().size = new Vector3(30f, 0.1f, 30f);
+            suelo.AddComponent<BoxCollider>().size = new Vector3(60f, 0.1f, 60f);
+            // Teletransporte a cualquier punto del suelo (además del joystick de la plantilla).
+            suelo.AddComponent<TeleportationArea>().interactionLayers = InteractionLayerMask.GetMask("Teleport");
         }
 
         static void CrearXR()
@@ -209,10 +214,13 @@ namespace SistemaSolar.Editor
             var compAnillo = anillo.AddComponent<AnilloOrbita>();
             compAnillo.centro = centro;
             compAnillo.radio = d.radioOrbita;
+            compAnillo.grosor = 0.003f * Escala;
 
             var cuerpo = raiz.AddComponent<CuerpoCeleste>();
             cuerpo.centro = centro;
             cuerpo.radioOrbita = d.radioOrbita;
+            cuerpo.toleranciaAnillo = 0.06f * Escala;
+            cuerpo.distanciaMaxima = 40f;
             cuerpo.periodoOrbital = d.periodo;
             cuerpo.anguloInicial = d.angulo;
             cuerpo.anillo = compAnillo;
@@ -283,7 +291,7 @@ namespace SistemaSolar.Editor
             main.loop = false;
             main.startLifetime = new ParticleSystem.MinMaxCurve(0.4f, 0.8f);
             main.startSpeed = new ParticleSystem.MinMaxCurve(0.05f, 0.2f);
-            main.startSize = new ParticleSystem.MinMaxCurve(0.02f, 0.05f);
+            main.startSize = new ParticleSystem.MinMaxCurve(0.02f * Escala, 0.05f * Escala);
             main.startColor = new ParticleSystem.MinMaxGradient(new Color(1f, 0.3f, 0f), new Color(1f, 0.85f, 0.2f));
             main.simulationSpace = ParticleSystemSimulationSpace.World;
             main.maxParticles = 500;
@@ -292,7 +300,7 @@ namespace SistemaSolar.Editor
             emision.rateOverTime = 0f;
             var forma = ps.shape;
             forma.shapeType = ParticleSystemShapeType.Sphere;
-            forma.radius = 0.03f;
+            forma.radius = 0.03f * Escala;
 
             var color = ps.colorOverLifetime;
             color.enabled = true;
